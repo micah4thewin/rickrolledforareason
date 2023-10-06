@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
   var videoElem = document.getElementById('videoBackground');
-
   function tryPlay() {
     videoElem.play().then(function() {
       // Automatic playback started!
@@ -10,10 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       videoElem.play();
     });
   }
-
   // Try to start video on page load
   tryPlay();
-
   // Unmute and play the video as soon as the user interacts with the page
   document.body.addEventListener('click', function() {
     videoElem.muted = false;
